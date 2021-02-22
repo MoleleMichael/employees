@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employees</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 >Company Department</h2> 
+      <mat-grid-list cols="3" >
+        <mat-grid-tile *ngFor="let department of department">
+          <div class="card" style="width: 18rem;">
+            <img src={{department.logo}} class="card-img-top" alt="..." height="300px" width="350px">
+            <div class="card-body">
+              <h1>{{department.depName}}</h1>
+            </div>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </body>
+</html>
+
+

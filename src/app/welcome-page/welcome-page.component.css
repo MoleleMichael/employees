@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    color: white;
+  }
+  p{
+    text-align: center;
+    color: cadetblue;
+  }
+  body{
+    background-image: url(https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?cs=srgb&dl=pexels-fauxels-3182773.jpg&fm=jpg);
+    height: 400px;
+    background-size: auto;
+  }

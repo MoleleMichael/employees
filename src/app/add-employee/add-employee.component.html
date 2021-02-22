@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employees</title>
+  </head>
+  <body>
+    <div>
+      <h2>Add New Employee</h2>
+      <div class="container" style="border-style: groove">
+        <mat-grid-list cols="2" > 
+          <mat-grid-tile >
+            <form [formGroup]="contactForm" (submit)="onSubmit()" >
+                <div class="form-group">
+                  <input matInput formControlName="empName"  class="form-control" placeholder="Employee Name">
+                </div>
+                <div class="form-group">
+                  <input matInput formControlName="empSurname" class="form-control" placeholder="Employee Surname">
+                </div>
+                <div class="form-group">
+                  <input matInput formControlName="empPosition" class="form-control" placeholder="Job Position">
+                </div>
+                <div class="form-group">
+                  <input matInput formControlName="empAge" class="form-control" placeholder="Employee Age">
+                </div>
+                <div class="form-group">
+                  <input matInput formControlName="empImage" class="form-control" placeholder="Employee Image URL">
+                </div>
+                <div>
+                  <button mat-raised-button  type="submit" color="accent">
+                    <i class="material-icons">save</i>
+                  </button>
+                </div>
+            </form>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </div>
+  </body>
+</html>

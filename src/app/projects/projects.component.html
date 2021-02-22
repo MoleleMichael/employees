@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employees</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 >Company Projects</h2>
+      <mat-grid-list cols="3" >
+        <mat-grid-tile *ngFor="let projects of projects"> 
+          
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src={{projects.logo}} alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>{{projects.projectName}}</h1> 
+                  <p>{{projects.projectDetails}}</p> 
+                  
+                </div>
+              </div>
+            </div>
+          
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </body>
+</html>
